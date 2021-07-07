@@ -4,10 +4,10 @@
  */
 
 class Connection{
-    private $server = "localhost:3306";
-    private $dbname = "danielho_dhweb";
-    private $pass = "private";
-    private $user = "danie_dhweb";
+    private $server = getenv["SERVER"];
+    private $dbname = getenv["DBNAME"];
+    private $pass = getenv["PASS"];
+    private $user = getenv["USER"];
 
     public function connection()
     {

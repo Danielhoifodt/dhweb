@@ -1,11 +1,11 @@
 <?php
-require_once "/var/www/vhosts/dhweb.no/httpdocs/vendor/autoload.php";
+require_once "/somepath/vendor/autoload.php";
 
 $google_client = new Google_Client();
 
-$google_client->setClientId("private");
+$google_client->setClientId(getenv("CLIENTID"));
 
-$google_client->setClientSecret("private");
+$google_client->setClientSecret(getenv("CLIENTSECRET"));
 
 $google_client->setRedirectUri("https://www.dhweb.no/google-redirect.php");
 
