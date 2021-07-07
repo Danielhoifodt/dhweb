@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+body{
+	box-sizing: border-box;
+	width:100vw;
+	height:100vh;
+	margin:0px;
+	padding:0px;
+	background-image: url("../img/background.jpeg");
+	font-family: "Noto Sans";
+	font-size: 18px;
+}
+
+.intro{
+	width:100vw;
+	height:100vh;
+	z-index:1;
+	overflow-y: hidden;
+}
+
+.intro-heading{
+	color:black;
+	position:absolute;
+	top:1.2%;
+	left: 50%;
+    transform: translate(-50%, 0);
+	cursor: pointer;
+}
+.intro-subheading{
+	color:black;
+	font-size: 20px;
+	position:absolute;
+	top:7%;
+	left:50%;
+	transform: translate(-50%, 0);
+	cursor: pointer;
+}
+#intro-tap{
+	position:absolute;
+	top:50%;
+	left: 50%;
+    transform: translate(-50%, 0);
+	cursor: pointer;
+}
+#index{
+	display:none;
+}
+nav{
+	display:grid;
+	height:110px;
+	width:100%;
+	background-color: #748B75;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	/*box-shadow: gray -5px 5px 5px;*/
+}
+
+.nav_wrapper{
+	margin:auto auto auto 5%;
+}
+
+
+.copyright{
+	margin: auto 5% auto auto;
+}
+ul{
+	margin-bottom: 0rem;
+}
+.li_desktop{
+	display:inline-block;
+	margin:10px;
+	cursor: pointer;
+	padding-bottom: 10px;
+
+}
+
+.link{
+	color:white;
+	text-decoration: none;
+}
+.link:hover{
+	text-decoration: underline;
+}
+
+.mail{
+	margin:auto;
+	margin-top: 40px;
+}
+input, textarea{
+	display:block;
+	background-color: #92AD94;
+	border: 1px solid white;
+	color:white;
+	width:200px;
+	height:30px;
+	padding-left: 5px;
+	font-size:12px;
+}
+input::placeholder, textarea::placeholder{
+	color:white;
+}
+.gdpr{
+	display:grid;
+	width: 200px;
+	grid-template-columns: auto auto;
+}
+.gdpr a{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	margin:auto;
+	width:150px;
+}
+
+.input-gdpr{
+	grid-column-start: 2;
+	grid-column-end: 3;
+	width:20px;
+	margin:auto;
+}
+
+
+/*mobile menu*/
+@keyframes snurr {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(180deg);}
+}
+
+.ul_mobile{
+	display:block;
+	list-style-type:none;
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+.mobile_menu{
+	position:absolute;
+	top:14%;
+	height: 20%;
+	width:100%;
+	display:none;
+}
+.li_box_m{
+	width:100%;
+	height:40px;
+	text-align:center;
+	background-color:#4B5A4C;
+	border:1px solid white;
+	display:grid;
+	text-decoration: none;
+}
+.li_content_m{
+	margin:auto;
+	color:white;
+	text-decoration: none;
+}
+.hamburger{
+	position:absolute;
+	top:4.5%;
+	right:3%;
+	display: none;
+	
+}
+.animate{
+	animation: fadeIn 2s;
+}
+
+
+.site_wrapper{
+	display:grid;
+	width:100%;
+}
+.site_section{
+	background-color: #fff;
+	margin: 5% 15% 5% 15%;
+	text-align: center;
+	display:grid;
+	border-radius: 10px;
+	/*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);*/
+	box-shadow: grey -3px 3px 3px;
+}
+.text_wrapper{
+	margin:0% 15% 0% 15%;
+}
+.page-heading{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.logo{
+	position:absolute;
+	top:3%;
+	left:2%;
+	width:60px;
+	border-radius:10px;
+}
+.like_button{
+	margin:50px;
+	cursor: pointer;
+}
+p {
+	line-height: 1.5rem;
+	text-align: left;
+	font-size:17px;
+}
+.profile_pic{
+	width:500px;
+}
+
+/*Card in medlemsportalen*/
+.card-wrapper{
+	width:50%;
+	margin:auto;
+}
+
+footer{
+	box-shadow: 0 0 2px 2px black;
+	width:100%;
+	height: 100px;
+	background-color: black;
+	color:white;
+	display:grid;
+}
+.footer-wrapper{
+	margin:auto;
+	width:50%;	
+}
+.footer{
+	text-align:center;
+	font-size:14px;
+	margin:auto;
+}
+#joke{
+	cursor: pointer;
+	text-decoration: underline;
+}
+button{
+	background-color:#92AD94;
+	color:white;
+}
+
+@media screen and (max-width: 1000px) {
+	nav{
+		height: 14%;
+	}
+	.site_section{
+		margin: 15% 30px 30px 30px;
+	}
+	.text_wrapper{
+		margin: 0% 5% 0% 5%;
+	}
+	.daniel_home{
+		width:150px;
+	}
+	li{
+		font-size: 14px;
+		margin:3px;
+	}
+	.logo{
+		top:3.5%;
+		left:3%;
+		border-radius:10px;
+	}
+	.ul_desktop{
+		display:none;
+	}
+	.hamburger{
+		display:block;
+		
+	}
+	.hamburger_snurr{
+		animation: snurr 1s;
+	}
+	.profile_pic{
+		width:200px;
+	}
+	.blinkist_wrapper{
+		height:13%;
+	}
+	footer{
+		height: 100px;
+	}
+	.footer-wrapper{
+		width:90%;	
+	}
+	.td-font-size{
+		font-size:8px;
+		letter-spacing: normal;
+	}
+	h1{
+		font-size:20px;
+	}
+	/*Card in medlemsportalen*/
+	.card-wrapper{
+	width:100%;
+	margin:auto;
+	}
+	.intro-heading{
+		top:3.5%;
+	}
+	.intro-subheading{
+		top:7.5%;
+		font-size: 14px;
+	}
+}

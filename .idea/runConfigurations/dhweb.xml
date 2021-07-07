@@ -1,0 +1,7 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="dhweb" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="NOT_FILTER" server_name="local server">
+    <method v="2">
+      <option name="LaunchBrowser.Before.Run" url="localhost" />
+    </method>
+  </configuration>
+</component>
