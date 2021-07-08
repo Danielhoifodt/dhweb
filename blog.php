@@ -58,7 +58,11 @@ switch($blognumber)
         {
             $blognumber = $_POST["blognumber"];
         }
-        require_once "blogs/blog".$blognumber.".php";
+        if(is_int($blognumber))
+        {
+            require_once "blogs/blog".$blognumber.".php";
+        }
+
         ?>
     </div>
     <br>
