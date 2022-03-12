@@ -89,7 +89,7 @@ if(isset($_POST["content"]))
     $mail->send();
     echo 'Beskjed ble sendt';
 } catch (Exception $e) {
-    /*echo "Beskjed kunne ikke bli sendt: {$mail->ErrorInfo}";*/
+    echo "Beskjed kunne ikke bli sendt: {$mail->ErrorInfo}";
     echo "";
 }
 
